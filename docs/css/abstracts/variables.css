@@ -1,0 +1,9 @@
+:root {
+  --color-white: rgba(252, 252, 252, 1);
+  --color-black: rgba(11, 11, 11, 1);
+
+  --font-family-roboto: 'Roboto', sans-serif;
+  --font-family-lato: 'Lato', sans-serif;
+  --font-family-body: var(--font-family-roboto);
+  --font-family-headings: var(--font-family-lato);
+}
