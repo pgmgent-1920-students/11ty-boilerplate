@@ -4,12 +4,16 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "npx @11ty/eleventy",
-        "debug": "npx @11ty/eleventy --dryrun",
-        "serve": "npx @11ty/eleventy --serve --port=8081",
-        "watch": "npx @11ty/eleventy --watch --port=8081"
+        "build": "npx eleventy",
+        "debug": "npx eleventy --dryrun",
+        "serve": "npx eleventy --serve --port=8081",
+        "watch": "npx eleventy --watch --port=8081"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.9.0",
+        "@11ty/eleventy-navigation": "^0.1.2"
+    }
 }
