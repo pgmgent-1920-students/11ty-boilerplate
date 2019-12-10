@@ -1,0 +1,15 @@
+{
+    "name": "11ty",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx @11ty/eleventy",
+        "debug": "npx @11ty/eleventy --dryrun",
+        "serve": "npx @11ty/eleventy --serve --port=8081",
+        "watch": "npx @11ty/eleventy --watch --port=8081"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

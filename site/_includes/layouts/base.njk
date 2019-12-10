@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ renderData.title or title or site.title }}</title>
+        <meta name="Description" content="{{ renderData.description or description or site.description }}">
+        <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    </head>
+    <body> 
+        {% include "components/header.njk" %}
+        {% include "components/navigation.njk" %}
+        <main class="main">
+            {{ content | safe }}
+        </main>
+        {% include "components/footer.njk" %}
+    </body>
+</html>
