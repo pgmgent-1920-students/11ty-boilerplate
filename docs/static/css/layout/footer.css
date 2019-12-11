@@ -1,3 +1,86 @@
-.footer {
-  background: #000;
+.wrapper--footer {
+  padding: calc(var(--gutter)*4) 0;
+  background: var(--color-grey-500);
+}
+
+.wrapper--footer .g-fb-row:nth-of-type(2) {
+  padding: calc(var(--gutter)*4) 0;
+}
+
+.footer-subscribe > h1 {  
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.44em;
+}
+
+.frm-group {
+  display: inline-block;
+  border: 1px solid var(--color-grey-300);
+}
+
+#email, #submit {
+  background: none;
+  border: none;
+  outline: none;
+
+  padding: calc(var(--gutter)*1);
+}
+
+#submit {
+  opacity: 0;
+  transition: all 268ms ease-in-out 0;
+}
+
+#email:focus ~ #submit {
+  opacity: 1;
+}
+
+#submit {
+  color: var(--color-blue);
+}
+
+.footer-logo {
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.2em;
+}
+
+.footer-visit-instagram {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.2em;
+
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.footer-visit-instagram:hover {
+  color: var(--color-blue);
+}
+
+.footer-terms {
+  font-size: 0.8rem;
+  text-align: right;
+  
+}
+
+.footer-terms a {
+  color: var(--color-black);
+  text-decoration: none;
+
+  transition: all 268ms ease-out 0s;
+}
+
+.footer-terms a:hover {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.footer-terms a:after {
+  content: "-";
+  padding: 0 calc(var(--gutter)/2);
+}
+
+.footer-terms a:last-of-type:after {
+  display: none;
 }

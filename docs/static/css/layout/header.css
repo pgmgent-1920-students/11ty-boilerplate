@@ -1,0 +1,18 @@
+.wrapper--header {
+  padding: calc(var(--gutter)*4) 0;
+}
+
+.logo {
+
+}
+
+.logo > a {
+  display: block;
+  text-indent: -999em;  
+
+  width: 117.6px;
+  height: 67.2px;
+  background-size: 117.6px 67.2px;
+  background-image: url(../../images/logo.png);
+  background-repeat: no-repeat;
+}
