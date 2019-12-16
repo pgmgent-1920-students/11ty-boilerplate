@@ -1,4 +1,4 @@
-<header class="wrapper wrapper--footer">
+<footer class="wrapper wrapper--footer">
   <div class="g-fb-container">
     <div class="g-fb-row">
         <div class="g-fb-col-12">
@@ -17,24 +17,32 @@
         <div class="g-fb-col-4">
             <span class="footer-logo">Arne<br>Quinze</span>
         </div>
-        <div class="g-fb-col-3">
+        <div class="g-fb-col-2">
             <a class="footer-visit-instagram" href="https://www.instagram.com/arnequinze/" target="_blank">Visit our<br>Instagram</a>           
         </div>
-        <div class="g-fb-col-5">5
-           
+        <div class="g-fb-col-6">
+            <div class="footer-showcase">
+                {% for medium in footerShowcase.showcase %}  
+                <picture class="footer-showcase__picture">
+                    <img src="{{ medium.url}}" />
+                </picture> 
+                {% endfor %} 
+            </div>
         </div>
     </div>
     <div class="g-fb-row">
         <div class="g-fb-col-6">
-            <p>&copy; Arne Quinze, all rights reserved</p>
+            <p class="footer-copyright">&copy; Arne Quinze, all rights reserved</p>
         </div>
         <div class="g-fb-col-6">
             <p class="footer-terms">
                 <a href="https://www.arnequinze.com/terms-and-conditions" title="">Terms & conditions</a>
+                <span class="footer-terms__separator">-</span>
                 <a href="https://www.arnequinze.com/privacy-policy" title="">Privacy Policy</a>
+                <span class="footer-terms__separator">-</span>
                 <a href="https://www.figure8.be?utm_source=Arne+Quinze&utm_medium=credits&utm_campaign=client_sites" title="">webdesign Figure8</a>
             </p>        
         </div>
     </div>
   </div>
-</header>
+</footer>

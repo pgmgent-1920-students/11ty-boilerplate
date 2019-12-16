@@ -1,0 +1,21 @@
+<article class="g-fb-row art-list">
+    <header class="g-fb-col-12 art-list__header">
+        <h1 class="art-list__heading">Arts &amp; Exhibitions</h1>
+        <a class="art-list__link" href="{{ "art-and-exhibitions" | url }}" title="View all Arts & Exhibitions">View all</a>
+    </header>
+    {% for artwork in collections.art %}
+    <div class="g-fb-col-12 g-fb-col-sm-12 g-fb-col-md-6 g-fb-col-lg-4">
+        <article class="card">
+            <h1 class="card__title">{{ artwork.data.title }}</h1>
+            <p class="card__description">{{ artwork.data.description }} &mdash; {{ artwork.data.location }}</p>
+            <picture class="card__picture">
+                <img src="{{ artwork.data.thumbnail }}">
+            </picture>
+            <div class="card__body">{{ artwork.data.explanation | truncate(126) | safe  }}</div>
+            <div class="card__actions">
+                <a href="{{ artwork.url | url }}" class="card__read-more" title="Details {{ artwork.data.title }}">Learn more</a>
+            </div>
+        </article>
+    </div>
+    {% endfor %}
+</article>

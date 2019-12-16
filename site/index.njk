@@ -5,17 +5,8 @@ eleventyNavigation:
   order: 1
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1>Latest 4 Posts</h1>
-      <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<div class="wrapper wrapper--home-art-list">
+    <div class="g-fb-container">
+    {% include "components/art-list.njk" %}
     </div>
-  </div>
 </div>
-
-<ul>
-{% for teamMember in team.members %}
- <li>{{ teamMember.firstName }} {{ teamMember.lastName }}</li>
-{% endfor %}
-</ul>

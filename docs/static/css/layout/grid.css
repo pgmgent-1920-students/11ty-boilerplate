@@ -1,6 +1,7 @@
 
 :root {
-  --gutter: 12px;
+  --gutter: 36px;
+  --spacer: 12px;
   --debug-g-fb-container-background: rgba(0, 0, 0, 1);
   --debug-g-fb-row-background: rgba(0, 0, 0, 1);
   --debug-g-fb-column-background: rgba(0, 255, 0, 1);
