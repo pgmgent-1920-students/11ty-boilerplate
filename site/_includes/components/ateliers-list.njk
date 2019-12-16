@@ -1,0 +1,21 @@
+<article class="g-fb-row ateliers-list">
+    <header class="g-fb-col-12 ateliers-list__header">
+        <h1 class="ateliers-list__heading">Atelier / Studios</h1>
+        <a class="ateliers-list__link" href="{{ "atelier-studio" | url }}" title="View all Atelier / Studio">View all</a>
+    </header>
+    {% for place in collections.ateliers %}
+    <div class="g-fb-col-12 g-fb-col-sm-12 g-fb-col-md-6 g-fb-col-lg-4">
+        <article class="card">
+            <h1 class="card__title">{{ place.data.title }}</h1>
+            <p class="card__description">{{ place.data.location }}</p>
+            <picture class="card__picture">
+                <img src="{{ place.data.thumbnail }}">
+            </picture>
+            <div class="card__body">{{ place.data.explanation | truncate(126) | safe  }}</div>
+            <div class="card__actions">
+                <a href="{{ place.url | url }}" class="card__read-more" title="Details {{ place.data.title }}">Learn more</a>
+            </div>
+        </article>
+    </div>
+    {% endfor %}
+</article>
