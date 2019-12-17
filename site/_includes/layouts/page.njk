@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+templateClass: wrapper--page
+---
+
+<article>
+    <header class="main-header">
+        {% if headerMedia %}
+        <div class="main-header__media">
+            {% if headerMedia.type == "image" %}
+            <picture class="main-header__media">
+                <img src="{{ headerMedia.url }}">
+            </picture>
+            {% endif %}
+        </div>
+        {% endif %}
+        <div class="g-fb-container">
+            <div class="g-fb-row">
+                <div class="g-fb-col-12">
+                    <h1 class="">{{ title or site.title }}</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="g-fb-container">
+        <div class="g-fb-row">
+            {{ content | safe }}
+        </div>
+    </div>
+</article>

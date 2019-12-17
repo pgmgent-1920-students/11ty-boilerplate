@@ -122,3 +122,10 @@
 .footer-terms a:last-of-type:after {
   display: none;
 }
+
+@media (min-width: 800px) {
+  .footer-showcase__picture {
+    width: 8vw;
+    height: 8vw;
+  }
+}

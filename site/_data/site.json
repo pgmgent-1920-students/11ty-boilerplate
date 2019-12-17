@@ -1,16 +1,18 @@
 {
-    "title": "pgm.gent | Associate Degree in Programming | Artevelde University of Applied Sciences",
+    "title": "pgm.gent",
+    "subdomain": "Arne Quinze",
+    "domain": "Artevelde University of Applied Sciences",
     "url": "https://myurl.com/",
-    "description": "I am writing about my experiences as a naval navel-gazer.",
+    "description": "Arne Quinze is a Belgian sculptor and painter. With his art he wants to contest the greyness and dullness of the environments we live in. Driven by the force of nature, guiding our cities towards a better and greener future.",
     "feed": {
-        "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+        "subtitle": "Arne Quinze is a Belgian sculptor and painter. With his art he wants to contest the greyness and dullness of the environments we live in. Driven by the force of nature, guiding our cities towards a better and greener future.",
         "filename": "feed.xml",
         "path": "/feed/feed.xml",
         "url": "https://myurl.com/feed/feed.xml",
         "id": "https://myurl.com/"
     },
     "author": {
-        "name": "Your Name Here",
-        "email": "youremailaddress@example.com"
+        "name": "Philippe De Pauw - Waterschoot",
+        "email": "philippe.depauw@arteveldehs.be"
     }
 }
