@@ -26,6 +26,11 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  // Filters
+  eleventyConfig.addFilter('artSpotlightFilter', function(collection) {
+      return collection.find(item => item.data.spotlight === true)
+  });
+
   return {
     dir: {
       input: "site",

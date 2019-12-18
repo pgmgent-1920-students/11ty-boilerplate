@@ -1,0 +1,16 @@
+<div class="g-fb-row art-list">
+    {% set artwork = collections.art | artSpotlightFilter %}
+    <div class="g-fb-col-12">
+        <article class="card">
+            <h1 class="card__title">{{ artwork.data.title }}</h1>
+            <p class="card__description">{{ artwork.data.description }} &mdash; {{ artwork.data.location }}</p>
+            <picture class="card__picture">
+                <img src="{{ artwork.data.thumbnail }}">
+            </picture>
+            <div class="card__body">{{ artwork.data.explanation | truncate(256) | safe  }}</div>
+            <div class="card__actions">
+                <a href="{{ artwork.url | url }}" class="card__read-more" title="Details {{ artwork.data.title }}">Learn more</a>
+            </div>
+        </article>
+    </div>
+</div>
