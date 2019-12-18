@@ -2,10 +2,13 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .art-list > div {
   margin-bottom: calc(var(--gutter) * 2);
 }
 
+=======
+>>>>>>> 321d68a751bd3dc73eea80b787057e5e61ccc55e
 .art-list__header {
   margin-bottom: calc(var(--spacer)*2);
 }
@@ -28,4 +31,11 @@
 
 .art-list__link:hover {
   border-bottom-color: var(--color-blue);
+<<<<<<< HEAD
+=======
+}
+
+.art-list > div {
+  margin-bottom: calc(var(--gutter) * 2);
+>>>>>>> 321d68a751bd3dc73eea80b787057e5e61ccc55e
 }

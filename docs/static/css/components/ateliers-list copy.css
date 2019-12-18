@@ -24,4 +24,11 @@
 
 .ateliers-list__link:hover {
   border-bottom-color: var(--color-blue);
+<<<<<<< HEAD
+=======
+}
+
+.ateliers-list > div {
+  margin-bottom: calc(var(--gutter) * 2);
+>>>>>>> 321d68a751bd3dc73eea80b787057e5e61ccc55e
 }
