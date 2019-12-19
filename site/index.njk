@@ -9,7 +9,7 @@ title: Home
 <div class="wrapper wrapper--spotlight">
     <div class="g-fb-container">
         <div class="g-fb-row">
-            <div class="g-fb-col-12">            
+            <div class="g-fb-col-12">          
             {% include "components/art-spotlight.njk" %}
             </div>
         </div>
@@ -19,6 +19,7 @@ title: Home
 
 <div class="wrapper wrapper--home-art-list">
     <div class="g-fb-container">
+    {% set artList = collections.art | getAmount(3) %}  
     {% include "components/art-list.njk" %}
     </div>
 </div>

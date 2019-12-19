@@ -29,7 +29,3 @@
 .art-list__link:hover {
   border-bottom-color: var(--color-blue);
 }
-
-.art-list > div {
-  margin-bottom: calc(var(--gutter) * 2);
-}

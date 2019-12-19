@@ -31,6 +31,13 @@ module.exports = function (eleventyConfig) {
       return collection.find(item => item.data.spotlight === true)
   });
 
+  eleventyConfig.addFilter('getAmount', function(collection, amount) {
+    if (amount === undefined || amount === null) {
+      return collection;
+    }
+    return collection.slice(0, amount);
+  });
+
   return {
     dir: {
       input: "site",

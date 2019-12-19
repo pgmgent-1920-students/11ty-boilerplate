@@ -3,7 +3,7 @@
         <h1 class="art-list__heading">Arts &amp; Exhibitions</h1>
         <a class="art-list__link" href="{{ "art-and-exhibitions" | url }}" title="View all Arts & Exhibitions">View all</a>
     </header>
-    {% for artwork in collections.art %}
+    {% for artwork in artList %}
     <div class="g-fb-col-12 g-fb-col-sm-12 g-fb-col-md-6 g-fb-col-lg-4">
         <article class="card">
             <h1 class="card__title">{{ artwork.data.title }}</h1>
